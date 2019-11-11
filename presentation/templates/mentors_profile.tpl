@@ -27,7 +27,7 @@
                     <div class="mt-3">
                     <a class="btn btn-sm btn-outline-primary"
                     href="{base_url()}/mentors_detailed_profile/mentors_id={$mentors.men_id}">View Profile</a>
-                    <a class="btn btn-sm btn-outline-primary followbyMentee" href="" id={$userSessionDetail.id}       mentorid={$mentordata.id}>Follow</a>
+                    <a class="btn btn-sm btn-outline-primary followbyMentee" href="" id={$userSessionDetail.id}       mentorid={$mentordata.id}>Follow Mentor</a>
                 </div>
             </div>
             <div class="col-4">
