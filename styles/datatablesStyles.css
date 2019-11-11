@@ -1,0 +1,74 @@
+.buttons-excel {
+  color: transparent !important;
+  background-image: url('../images/excell-removebg-preview.png') !important;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none !important;
+  background-color: white !important;
+}
+.buttons-excel:hover {
+  background-size: 50% !important;
+  background-color: transparent !important;
+}
+
+.buttons-pdf {
+  color: transparent !important;
+  background-image: url('../images/pdfs.png') !important;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none !important;
+  background-color: white !important;
+}
+.buttons-pdf:hover {
+  background-size: 50% !important;
+  background-color: transparent !important;
+}
+
+.buttons-print {
+  color: transparent !important;
+  background-image: url('../images/print.jpg') !important;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none !important;
+  background-color: white !important;
+}
+.buttons-print:hover {
+  background-size: 50% !important;
+  background-color: transparent !important;
+}
+
+.buttons-copy {
+  color: transparent !important;
+  background-image: url('../images/copy.png') !important;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none !important;
+  background-color: white !important;
+}
+.buttons-copy:hover {
+  background-size: 50% !important;
+  background-color: transparent !important;
+}
+
+.buttons-csv {
+  color: transparent !important;
+  background-image: url('../images/csv.png') !important;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none !important;
+  background-color: white !important;
+}
+.buttons-csv:hover {
+  background-size: 50% !important;
+  background-color: transparent !important;
+}
+.witViewList div.dt-buttons {
+  position: relative;
+  float: right !important;
+}
+

@@ -1,0 +1,17 @@
+.forparaStyle {
+  word-break: break-word !important;
+}
+
+.usrdt{
+    color: cadetblue;
+    font-family: monospace;
+}
+
+.usrdthead{
+background: linear-gradient(45deg, rgb(112, 132, 179), rgb(78, 107, 173), rgb(197, 208, 235));
+}
+
+.usreditprfl{
+  position: absolute;
+  right: 5%;
+}

@@ -1,0 +1,410 @@
+body {
+  box-sizing: border-box;
+}
+.program {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+}
+.overlayImges {
+  display: none;
+  background-color: red;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.OverlayBorder {
+  display: none;
+  padding: 1px !important;
+  border: 3px solid white;
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  left: 2%;
+  top: 2%;
+  z-index: 2;
+  color: white !important;
+}
+
+.slide {
+  margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #e94161;
+}
+.slick-prev {
+  left: -35px;
+}
+
+.overlay-content {
+  display: none;
+  position: absolute;
+  border: 2px solid white;
+  background-color: red;
+  opacity: 0.5;
+  z-index: 1;
+  color: white;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+}
+.gallery-img {
+  position: relative;
+  padding: 0 !important;
+}
+.bodyOverlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1e3262 !important;
+  /* background-color: #1e3262 !important; */
+}
+
+.schoolsHeadings1 {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+}
+.schoolsHeadings2 {
+  font-size: 2.5rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+}
+.cardd {
+  display: flex;
+}
+.feedbacktext {
+  margin: auto;
+  font-size: 15px !important;
+  letter-spacing: 1.5px !important;
+}
+
+.chaya {
+  box-shadow: 2px 6px 6px 6px #eaeaea;
+  border-radius: 25px !important;
+  line-height: 21px;
+}
+
+.card.chaya {
+  height: 40vh !important;
+}
+
+.diduknowbody {
+  padding: 3rem !important;
+}
+
+.didYouKnowContainer {
+  background-color: #f9f9f9;
+}
+.left {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  color: #ecb6c6;
+  font-size: 20px;
+}
+.right {
+  position: absolute;
+  bottom: 21px;
+  right: 7px;
+  color: #ecb6c6;
+  font-size: 20px;
+}
+.chaya {
+  box-shadow: 4px 2px 9px 2px #eaeaea;
+  border-radius: 9px !important;
+  line-height: 1.4rem;
+  font-size: 0.9rem !important;
+  padding-top: 1rem;
+  color: #777786;
+}
+
+.feedbacktext {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 2rem;
+  letter-spacing: 1.5px !important;
+}
+
+.card.chaya {
+  height: 15rem !important;
+}
+#volunteerBtn {
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+
+.contentOverImg {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  font-size: 25px;
+  display: block;
+  z-index: 2;
+  background-color: #00000047 !important;
+}
+.overImgTxt {
+  font-size: 30px !important;
+  color: white !important;
+}
+.modal-header {
+  padding: 0.5rem 0.5rem !important;
+}
+.bgimg-for-schoolcolleges {
+  background-image: url('../images/final_images/rbs_wit_schools_and_colleges.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+html {
+  box-sizing: border-box !important;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+}
+.sliderDivforSchools {
+  height: 60vh !important;
+  position: relative;
+  line-height: normal !important;
+}
+.overlay-text-schools-colleges {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+contentOverImg {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  font-size: 25px;
+  display: block;
+  z-index: 2;
+  background-color: #00000047 !important;
+}
+.overImgTxt {
+  font-size: 30px !important;
+  color: white !important;
+}
+.modal-header {
+  padding: 0.5rem 0.5rem !important;
+}
+.bgimg-for-schoolcolleges {
+  background-image: url('../images/final_images/rbs_wit_schools_and_colleges.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  height: auto;
+}
+html {
+  box-sizing: border-box !important;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box !important;
+}
+.storyTellerPic {
+  position: absolute;
+  left: 45%;
+  top: -25px;
+  z-index: 1000;
+}
+@media screen and(max-width: 600px) {
+  .testimonialsCards {
+    max-height: 100%;
+    height: 100vh;
+    max-width: 100%;
+  }
+  .storyTellerPic {
+    position: absolute;
+    left: 45%;
+    top: -75px;
+    z-index: 1000;
+  }
+}
+/* width */
+#stylScroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#stylScroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+#stylScroll::-webkit-scrollbar-thumb {
+  background: #e94161;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#stylScroll::-webkit-scrollbar-thumb:hover {
+  background: #e94161;
+}
+.img-thumbnail1.img-thumb {
+  height: 18vh;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 14px;
+}
+img.gallery {
+  width: 100%;
+  height: 100%;
+}
+.active_images {
+  border: 4px solid #e94161;
+  outline: #1e3262 5px solid;
+}
+img.gallery-img {
+  width: 100% !important;
+  height: 90% !important;
+}
+.popupModalimg {
+  margin-left: -46px !important;
+  width: 80rem !important;
+}
+
+.close {
+  background: white;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #e94161;
+}
+.main-div {
+  height: 100vh;
+  width: 100%;
+  /* margin: auto; */
+  /* margin-bottom: 14px; */
+}
+img.gallery-img {
+  width: 100% !important;
+  height: 90% !important;
+}
+
+.schoolsandcollegesTopStyle {
+  margin-top: 7.7rem !important;
+}
+.schoolCollegesMainAbout {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 2rem;
+  word-spacing: 2px;
+}
+.schoolsCollegesHourney {
+  font-size: 18px;
+  word-spacing: 2px;
+  line-height: 2rem;
+  font-family: sans-serif;
+}
+.testimonislaHeightsstyle {
+  height: 30rem;
+  box-shadow: 1px 1px 1px 1px #560101;
+}
+@media screen and (max-width: 480px) {
+  .schoolsandcollegesTopStyle {
+    margin-top: 5.7rem !important;
+  }
+  .bgimg-for-schoolcolleges {
+    background-image: url('../images/final_images/rbs_wit_schools_and_colleges_mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 100%;
+  }
+  .schoolCollegesMainAbout {
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 2rem;
+    word-spacing: 2px;
+  }
+  .schoolsCollegesHourney {
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 2rem;
+    font-family: sans-serif;
+  }
+  .testimonislaHeightsstyle {
+    height: 75rem;
+  }
+  .testimonislaHeightsstyleOthers {
+    height: 45rem;
+  }
+  .fontStylesP {
+    font-size: 0.8rem !important;
+  }
+  .storyTellerPic img {
+    height: 90px;
+  }
+  .feedbacktext {
+    text-align: center;
+    padding: 1rem;
+    margin-left: 0px;
+    letter-spacing: 1.5px !important;
+  }
+  .card.chaya {
+    height: 40vh !important;
+  }
+  .testimonialsForMobile {
+    display: none;
+  }
+}

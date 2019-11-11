@@ -1,0 +1,34 @@
+.directorTxt {
+  line-height: 1.9;
+}
+
+.directorImg {
+  width: 150rem;
+  padding: auto;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.bgimg {
+  /* background-image: url('../images/wit_website_images/background_image_one.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_two.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_three.jpg'); */
+  background-image: url('../images/wit_website_images/background_image_four.jpg');
+  /* background-image: url('../images/wit_website_images/background_image_five.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_six.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}

@@ -1,0 +1,185 @@
+.bgimg {
+  background-image: url('../images/pune-rbs-wit-event-events-group-females.jpg');
+  /* background-color: #adbbdd; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.whoweareMainAbout {
+  font-size: 20px;
+  word-spacing: 2px;
+  line-height: 2rem;
+  font-family: sans-serif;
+}
+
+.witQuote {
+  font-size: 40px;
+  color: #e94161;
+}
+.cardd {
+  display: flex;
+}
+#who-we-are h3 {
+  text-transform: uppercase;
+}
+
+.ourVisionText {
+  font-family: 'Satisfy', cursive !important;
+  color: #446e9a !important;
+  font-size: 25px !important;
+}
+.whoWeArecont {
+  background: radial-gradient(
+    circle at top left,
+    #eef4fd 20%,
+    #f7fafe 45%,
+    #fff 70%,
+    #fff 100%
+  ) !important;
+  opacity: 0.9;
+}
+.whoWeArecont1 {
+  background: radial-gradient(
+    circle at top right,
+    #eef4fd 20%,
+    #f7fafe 45%,
+    #fff 70%,
+    #fff 100%
+  ) !important;
+  opacity: 0.9;
+}
+
+.diduknowBound b {
+  color: #000000bf;
+}
+.wwrHeadings {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+}
+.whowearetext {
+  font-size: 35px !important;
+  color: #1e3262;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #e94161;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.chaya {
+  box-shadow: 4px 2px 9px 2px #eaeaea;
+  border-radius: 9px !important;
+  line-height: 1.4rem;
+  font-size: 0.9rem !important;
+  padding-top: 1rem;
+  color: #777786;
+}
+
+.didYouKnowContainer {
+  background-color: #f9f9f9;
+}
+
+.aboutTxtBound {
+  overflow: hidden;
+  height: 8rem !important;
+}
+.didYouKnowContainer {
+  background-color: #f9f9f9;
+}
+.left {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  color: #ecb6c6;
+  font-size: 20px;
+}
+.right {
+  position: absolute;
+  bottom: 21px;
+  right: 7px;
+  color: #ecb6c6;
+  font-size: 20px;
+}
+.chaya {
+  box-shadow: 4px 2px 9px 2px #eaeaea;
+  border-radius: 9px !important;
+  line-height: 1.4rem;
+  font-size: 0.9rem !important;
+  padding-top: 1rem;
+  color: #777786;
+}
+.growDevelop {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.cardd {
+  display: flex;
+}
+
+.feedbacktext {
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+  letter-spacing: 1.5px !important;
+}
+.card.chaya {
+  height: 15rem !important;
+}
+.diduknowBound {
+  overflow: hidden;
+  height: 9rem !important;
+}
+.adjustfromTop {
+  margin-top: 7.7rem !important;
+}
+.whowearemission {
+  font-size: 28px !important;
+}
+.anuQuotesMain {
+  box-shadow: 1px 2px 2px 1px #cac4c4;
+  padding: 50px 0px 50px 0px;
+  background: bisque;
+}
+.anuMainQuotess {
+  box-shadow: 1px 2px 2px 1px #d2d1d1;
+  padding: 30px;
+  background: currentColor;
+}
+.forMobileAnuQuotes {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .whoweareMainAbout {
+    font-size: 15px;
+    word-spacing: 1px;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+  }
+  .adjustfromTop {
+    margin-top: 6.6rem !important;
+  }
+  .whowearemission {
+    font-size: 17px !important;
+  }
+  .forMobileAnuQuotes {
+    display: block;
+  }
+  .anuQuotesMain {
+    display: none;
+  }
+}

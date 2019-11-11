@@ -1,0 +1,220 @@
+<?php
+/* Smarty version 3.1.33, created on 2019-07-01 10:39:24
+  from 'C:\xampp\htdocs\rbswit\presentation\templates\footer.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5d19e2dcc8e088_39430777',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '3f0b60e46002f42106344476a371af715d401668' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\rbswit\\presentation\\templates\\footer.tpl',
+      1 => 1561977055,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5d19e2dcc8e088_39430777 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+    <title>Home|WIT</title>
+  </head>
+  <body>
+    <footer
+      class="page-footer font-small blue-grey lighten-5 bgclr"
+      style="background-color: #586481;"
+    >
+      <div
+        class="container-fluid text-center text-md-left mt-5"
+        style=" backgrund-color: white; color: white"
+      >
+        <!-- Grid row -->
+        <div class="row mt-3 dark-grey-text py-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <!-- Content -->
+            <h6
+              class="text-uppercase font-weight-bold"
+              style="color: white !important ;"
+            >
+              WIT
+            </h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              WomenInTech (WiT) is an endeavor which aims to reach out to women
+              across age-groups- Schools, Colleges, women starting their
+              careers, working women, women restarting their careers, stay at
+              home moms and others- and help realize their careers in technology
+              thereby making the Technology ecosystem more inclusive.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6
+              class="text-uppercase font-weight-bold"
+              style="color: white !important"
+            >
+              WORK STREAM
+            </h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a
+                class="dark-grey-text text-white !important"
+                href="#!"
+                style="color: white !important;"
+                >SCHOOLS AND COLLAGES
+              </a>
+            </p>
+            <p>
+              <a class="dark-grey-text text-white !important" href="#!"
+                >SCHOLARSHIP</a
+              >
+            </p>
+            <p>
+              <a class="dark-grey-text text-white !important" href="#!"
+                >MENTORING</a
+              >
+            </p>
+            <p>
+              <a class="dark-grey-text text-white !important" href="#!"
+                >SECOND CAREER</a
+              >
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6
+              class="text-uppercase font-weight-bold"
+              style="color: white !important;"
+            >
+              Useful links
+            </h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p>
+              <a class="dark-grey-text text-white !important" href="#!"
+                >Your Account</a
+              >
+            </p>
+            <p>
+              <a class="dark-grey-text text-white !important" href="#!"
+                >Become an Affiliate</a
+              >
+            </p>
+            <p>
+              <a class="dark-grey-text text-white !important" href="#!"
+                >Shipping Rates</a
+              >
+            </p>
+            <p>
+              <a class="dark-grey-text text-white" href="#!">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6
+              class="text-uppercase font-weight-bold"
+              style="color: white !important;"
+            >
+              Contact
+            </h6>
+            <hr
+              class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px;"
+            />
+            <p><i class="fas fa-home mr-3"></i> CyberHub Gurgaon</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@wit.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91 554548845</p>
+            <p><i class="fas fa-print mr-3"></i> + 91 4467855487</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-light py-3">
+        © 2018 Copyright:
+        <a class="dark-grey-text text-white" href="#"> wit.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <?php echo '<script'; ?>
+
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript">
+      var wow = new WOW({
+        boxClass: 'wow', // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset: 0, // distance to the element when triggering the animation (default is 0)
+        mobile: true, // trigger animations on mobile devices (default is true)
+        live: true, // act on asynchronously loaded content (default is true)
+        callback: function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null, // optional scroll container selector, otherwise use window,
+        resetAnimation: true // reset animation on end (default is true)
+      });
+      wow.init();
+    <?php echo '</script'; ?>
+>
+  </body>
+</html>
+<?php }
+}

@@ -1,0 +1,67 @@
+.criteriaHeading{
+	font-size: 14px !important;
+	color: black !important;
+}
+.criteria{
+	font-size: 13px !important;
+	color: black !important;
+}
+.applyButton{
+	width: 6rem;
+	background-color: #048d26;
+	border: none;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 500;
+	border-radius: 3px;
+}
+.jobDescList li{
+	list-style: none;
+}
+.totalApplicant{
+	border: none !important;
+	padding: 0rem 0.8rem 0rem 0.8rem !important;
+	background-color: teal !important;
+	color: white !important;
+}
+.postName{
+	font-size: 1.5rem !important;
+}
+.registerButton{
+	width: 6rem;
+	background-color: #048d26;
+	border: none;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 500;
+	border-radius: 3px;
+}
+.jobtitleTopStyles {
+  margin-top: 7.7rem !important;
+}
+.stiktoTopBtns {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 15%;
+  z-index: 10;
+}
+ul li {
+  list-style-type: disc !important;
+  font-size: 0.9rem !important;
+  padding: 5px;
+}
+ol li {
+  font-size: 0.9rem !important;
+  padding: 5px;
+}
+@media screen and (max-width: 480px) {
+  .jobtitleTopStyles {
+    margin-top: 6.6rem !important;
+  }
+  .stiktoTopBtns {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 15%;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,36 @@
+.mentoringBtn {
+  background-color: #1e3262 !important;
+  color: white !important;
+}
+
+.mentoringBtn:hover {
+  background-color: #e52b50 !important;
+  color: white !important;
+}
+
+.display-4.text-success {
+  color: #092f66 !important;
+}
+
+.mentoringHeadings {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+.bgimg-for-mentoring {
+  background-image: url('../images/final_images/rbs_wit_mentoring.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}

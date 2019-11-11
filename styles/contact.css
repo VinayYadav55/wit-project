@@ -1,0 +1,27 @@
+.contactBtn {
+  background-color: #1e3262 !important;
+  color: white !important;
+}
+.contactBtn:hover {
+  background-color: #e52b50 !important;
+  color: white !important;
+}
+
+label {
+  color: gray;
+}
+.form-control:focus {
+    color: #495057 !important;
+    background-color: #fff !important;
+    border-color: #1e3262 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.1rem rgba(30, 50, 98, 0.25) !important;
+}
+.btn.focus ,
+.btn:focus {
+    outline: 0 !important;
+    box-shadow: none !important; 
+}
+.contactTopStyle{
+    margin-top:7.7rem !important;
+}

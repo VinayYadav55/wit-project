@@ -1,0 +1,33 @@
+.speakerImgDiv {
+  height: 10rem;
+  max-height: 10rem;
+  line-height: 10rem;
+  width: 12rem;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto !important;
+}
+.imageContainerSpeaker {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto !important;
+  padding: auto;
+}
+.main-image-speaker {
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto !important;
+  padding: auto;
+}
+.paragraphStyles {
+    color: #7c7c7c !important;
+    letter-spacing: 0.04rem !important;
+    font-size: 0.95rem !important;
+}
+.headingStyles {
+    letter-spacing: 0.04rem !important;
+}

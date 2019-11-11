@@ -1,0 +1,67 @@
+.filtersection{
+	background-color: white;
+
+}
+.companyName{
+	font-size: 16px;
+	color: black;
+	font-weight: 600;
+	letter-spacing: 0.8px;
+}
+.jobsSection{
+	background-color: white;
+}
+.listBorder{
+	border-right: 2px solid #a7a39f;
+}
+.resetBtn{
+	border: 1px solid #e6e4e4 !important;
+	border-radius: 4px !important;
+}
+.refineBtn{
+	background-color: #e52b50 !important;
+	color: white !important;
+}
+.refineBtn:hover{
+	background-color: #990707  !important;
+	color: white !important;
+}
+.resetBtn:hover{
+	background-color: #f3efef;
+	color: white;
+}
+.filterHeading{
+	font-size: 23px !important;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.jobTitle{
+	font-weight: 300;
+  	font-size: 1.4rem !important;
+  	font-family: sans-serif !important;
+  	letter-spacing: 0.1rem !important;
+  	line-height: 1.6rem !important;
+	color: #0101a2 !important;
+	cursor: pointer;
+	text-align: left !important;
+}
+.jobTitle:hover{
+	color: #7373cf !important;
+}
+.page{
+	margin: auto;
+	text-align: center;
+}
+li{
+	display: inline-block;
+	text-align: center;
+}
+.productpagetab{
+	line-height: 2em;
+    padding: 5px 10px;
+    color: #000;
+    font-weight: bold;
+    text-shadow: 1px 0 1px #0000004d;
+    border: 1px solid #000;
+    cursor: pointer;
+}

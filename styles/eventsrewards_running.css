@@ -1,0 +1,101 @@
+.bgimg {
+  /* background-image: url('../images/wit_website_images/background_image_one.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_two.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_three.jpg'); */
+  background-image: url('../images/wit_website_images/background_image_four.jpg');
+  /* background-image: url('../images/wit_website_images/background_image_five.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_six.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_seven.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.card-title {
+  text-align: center !important;
+}
+.bgimgg {
+  /* background-image: url('../images/wit_website_images/background_image_one.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_two.jpg'); */
+  background-image: url('../images/wit_website_images/background_image_three.jpg');
+  /* background-image: url('../images/wit_website_images/background_image_four.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_five.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_six.jpg'); */
+  /* background-image: url('../images/wit_website_images/background_image_seven.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.slide {
+  margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+}
+.slick-prev {
+  left: -35px;
+}
+
+.sjd {
+  background-color: #feffff;
+}
+
+.bgimgg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000062;
+  opacity: 0.2;
+}
+
+.colorBtn {
+  background-color: #000062 !important;
+  color: white !important;
+}
+.colorBtn:hover {
+  background-color: #e52b50 !important;
+  color: white !important;
+}
+
+.eventawardsheadings {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+}
+.img-div-fix {
+  height: 30vh !important;
+  width: 100% !important;
+}
+
+.txtBound {
+  overflow: hidden !important;
+  height: 8vh !important;
+}
+
+.titletxtBound {
+  overflow: hidden !important;
+  height: 3rem !important;
+}
+
+.titletxtBoundforPast {
+  overflow: hidden !important;
+  height: 6vh !important;
+}
+.txtBoundforpast {
+  overflow: hidden !important;
+  height: 11vh !important;
+}

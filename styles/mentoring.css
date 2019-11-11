@@ -1,0 +1,72 @@
+.mentoringBtn {
+  background-color: #1e3262 !important;
+  color: white !important;
+}
+
+.mentoringBtn:hover {
+  background-color: #e52b50 !important;
+  color: white !important;
+}
+
+.display-4.text-success {
+  color: #092f66 !important;
+}
+
+.mentoringHeadings {
+  font-size: 2rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+.bgimg-for-mentoring {
+  background-image: url('../images/final_images/rbs_wit_mentoring.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.mentoringMainAbout {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 2rem;
+  word-spacing: 2px;
+}
+.mentoringJourney {
+  font-size: 18px;
+  word-spacing: 2px;
+  line-height: 2rem;
+  font-family: sans-serif;
+}
+.mentoringTopStyles{
+    margin-top:7.7rem !important;
+}
+
+@media screen and (max-width:480px){
+  .mentoringTopStyles{
+    margin-top:5.7rem !important;
+}  
+.bgimg-for-mentoring {
+  background-image: url('../images/final_images/rbs_wit_mentoring_mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: auto;
+}
+.mentoringMainAbout {
+  font-size: 15px;
+  font-family: sans-serif;
+  line-height: 2rem;
+  word-spacing: 2px;
+}
+}

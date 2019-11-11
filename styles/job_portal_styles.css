@@ -1,0 +1,100 @@
+body {
+  margin: 0 !important;
+}
+span.select2-selection.select2-selection--single {
+  padding: 2px 0;
+  height: auto;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 30px;
+}
+
+.witBtn {
+  background-color: #1e3262;
+  color: white;
+}
+.witBtn:hover {
+  background-color: #e94161;
+  color: white;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1e3262 !important;
+}
+
+.wit-compnayLogo {
+  line-height: 50px;
+  height: 50px;
+  max-height: 50px;
+  line-height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wit-maincompanyImg {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.wit-main-image {
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  /* opacity: 0; */
+  /* transition: opacity 0.3s linear; */
+}
+
+.compnayLogo {
+  line-height: 80px;
+  height: 80px;
+  max-height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.maincompanyImg {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.main-image {
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  /* opacity: 0; */
+  /* transition: opacity 0.3s linear; */
+}
+
+.sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ff03c938;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  margin-left: 180px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

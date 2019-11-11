@@ -1,0 +1,15 @@
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(101, 227, 248, 0.04) !important;
+}
+.borderStyle{
+    border: 1px solid #d1d1d1 !important;
+}
+
+.headingStyles{
+    letter-spacing: 0.04rem !important;
+}
+.paragraphStyles{
+    color: #7c7c7c !important;
+    letter-spacing: 0.04rem !important;
+    font-size: 0.95rem !important;
+}

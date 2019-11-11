@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box !important;
+}
+.fontsForTerms {
+  font-size: 0.7rem !important;
+}
+.termsCondition {
+  text-decoration: underline;
+}
+.loginPage {
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.forgotTxt{
+    font-size: 12px;
+    text-decoration: underline;
+}
+.overlay {
+  background-color: #454343;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.newAccount,
+.doLogin {
+  cursor: pointer;
+}
+.linkedinBtn {
+  background-color: #0e91fc !important;
+  color: white !important;
+  width: 100%;
+  border-radius: 1px !important;
+}
+.loginBtn {
+  background-color: #fa0030 !important;
+  color: white !important;
+  width: 100%;
+  border-radius: 1px !important;
+}
+.signUpBtn {
+  background-color: #fa0030 !important;
+  color: white !important;
+  width: 100%;
+  border-radius: 1px !important;
+}
+.newAccount {
+  cursor: pointer;
+}
+.imageBackgroundLogin {
+  position: relative;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
+.background-image {
+  width: 90%;
+  height: 100%;
+}
+.loginCard {
+  opacity: 0.9;
+  border-radius: 7px;
+
+  margin-top: 3vh;
+  background-color: black;
+}
+
+.signUpCard {
+  opacity: 0.9;
+  border-radius: 7px;
+  width: 32rem !important;
+  margin-top: 3vh;
+  background-color: black;
+  display: none;
+}
+.overlay-loader-div {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000008f;
+  z-index: 1000;
+  display: none;
+  text-align: center;
+}
+.overlay-img-loader {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: 1001;
+}
+.bgimg-loginpage {
+  background-image: url('../images/final_images/what_we_dp_rbs_wit_original.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.overlay-loginpage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+label {
+  color: white !important;
+}
+.mainContainer {
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.loginPageText {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.signuppageTxt {
+  text-decoration: underline;
+  color: #fa0030 !important;
+  display: none;
+}
+
+.loginBtnActiveStyle {
+  background-image: linear-gradient(to right, #1e3262, #e94161);
+}
+
+.loginsignupPageStyles {
+  background-color: #000000bd;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.signupBtnStyles {
+  border: 1px solid white !important;
+  color: white !important;
+  border-top-right-radius: 3px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.loginBtnStyles {
+  border: 1px solid white !important;
+  color: white !important;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.signupPagePop {
+  cursor: pointer;
+}
+.loginPagePop {
+  cursor: pointer;
+}
+.loginTopStyles {
+  margin-top: 7.7rem !important;
+}
+.loginTxt {
+  color: white !important;
+  font-size: 1.1rem !important;
+  color: white !important;
+  font-weight: 100 !important;
+  font-family: auto;
+  line-height: 2.2rem !important;
+}
+@media screen and (max-width: 480px) {
+  .loginSignupBtns {
+    display: none;
+  }
+  .loginSignupTxt {
+    display: none;
+  }
+  .mainContainer {
+    height: 58rem !important;
+  }
+  .loginPageText {
+    display: block;
+  }
+  .signuppageTxt {
+    display: block;
+  }
+  .loginTopStyles {
+    margin-top: 6.5rem !important;
+  }
+}

@@ -1,0 +1,117 @@
+.bgimg {
+  background-image: url('../images/pune-rbs-wit-event-group-photo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+h3 {
+  text-transform: uppercase;
+}
+#whatwedo h3 {
+  text-transform: uppercase;
+}
+.headingcont {
+  font-size: 35px !important;
+}
+.whatwedograd {
+  background: radial-gradient(
+    circle at top left,
+    #eef4fd 20%,
+    #f7fafe 45%,
+    #fff 70%,
+    #fff 100%
+  ) !important;
+  opacity: 0.9;
+}
+.whatwedograd1 {
+  background: radial-gradient(
+    circle at top right,
+    #eef4fd 20%,
+    #f7fafe 45%,
+    #fff 70%,
+    #fff 100%
+  ) !important;
+  opacity: 0.9;
+}
+.whatwedobtn {
+  background-color: #e52b50 !important;
+  color: white !important;
+}
+
+.whatwedotxt {
+  color: #1e3262;
+}
+
+.slide {
+  margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.whatwedobtn {
+  background-color: #1e3262 !important;
+  color: white !important;
+  width: 30%;
+  border-radius: 2px !important;
+}
+.whatwedobtn:hover {
+  background-color: #e94161 !important;
+  color: white;
+}
+
+.sjd {
+  background-color: #feffff;
+}
+.colRadius {
+  border-radius: 5px;
+}
+.whatwedoHeading {
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+  line-height: 1.5 !important;
+}
+
+.aboutcont {
+  background: radial-gradient(
+    circle at top left,
+    #eef4fd 20%,
+    #f7fafe 45%,
+    #fff 70%,
+    #fff 100%
+  ) !important;
+  opacity: 0.9;
+}
+.aboutcont1 {
+  background: radial-gradient(
+    circle at top right,
+    #eef4fd 20%,
+    #f7fafe 45%,
+    #fff 70%,
+    #fff 100%
+  ) !important;
+  opacity: 0.9;
+}
+
+.Heading {
+  font-size: 35px;
+  font-weight: 400;
+}
+.subHeading {
+  font-size: 1.5rem;
+  font-weight: 300;
+}

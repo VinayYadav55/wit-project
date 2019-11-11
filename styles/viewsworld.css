@@ -1,0 +1,15 @@
+.newsForDiv {
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+.newsForDiv:hover {
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+.viewWorldTopStyle{
+    margin-top:7.2rem;
+}
+@media screen and (max-width:480px){
+   .viewWorldTopStyle{
+    margin-top:4.2rem;
+} 
+}
