@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-11 10:50:24
+/* Smarty version 3.1.33, created on 2019-11-11 11:45:25
   from 'C:\xampp\htdocs\womenintech\presentation\templates\mentors_profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dc92ee0cce3e5_14047412',
+  'unifunc' => 'content_5dc93bc58d0cc9_67623935',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f806417185c7ff846d15fc327df64c55eaf2a800' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\mentors_profile.tpl',
-      1 => 1573465822,
+      1 => 1573469123,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:dashheader.tpl' => 1,
   ),
 ),false)) {
-function content_5dc92ee0cce3e5_14047412 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc93bc58d0cc9_67623935 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\womenintech\\presentation\\smarty_plugins\\function.load_presentation_object.php','function'=>'smarty_function_load_presentation_object',),));
 echo smarty_function_load_presentation_object(array('filename'=>'userDashboard','assign'=>'obj'),$_smarty_tpl);?>
 
@@ -64,11 +64,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['mentordata']->value) {
                     <div class="mt-3">
                     <a class="btn btn-sm btn-outline-primary"
                     href="<?php echo base_url();?>
-/mentors_detailed_profile/mentors_id=<?php echo $_smarty_tpl->tpl_vars['mentors']->value['men_id'];?>
+/mentors_detailed_profile/mentors_id=<?php echo $_smarty_tpl->tpl_vars['mentordata']->value['id'];?>
 ">View Profile</a>
                     <a class="btn btn-sm btn-outline-primary followbyMentee" href="" id=<?php echo $_smarty_tpl->tpl_vars['userSessionDetail']->value['id'];?>
        mentorid=<?php echo $_smarty_tpl->tpl_vars['mentordata']->value['id'];?>
->Follow</a>
+>Follow Mentor</a>
                 </div>
             </div>
             <div class="col-4">

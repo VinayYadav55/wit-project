@@ -26,7 +26,7 @@
                     <div><small><b>Email id:</b> {$mentordata.email_id}</small></div>
                     <div class="mt-3">
                     <a class="btn btn-sm btn-outline-primary"
-                    href="{base_url()}/mentors_detailed_profile/mentors_id={$mentors.men_id}">View Profile</a>
+                    href="{base_url()}/mentors_detailed_profile/mentors_id={$mentordata.id}">View Profile</a>
                     <a class="btn btn-sm btn-outline-primary followbyMentee" href="" id={$userSessionDetail.id}       mentorid={$mentordata.id}>Follow Mentor</a>
                 </div>
             </div>
