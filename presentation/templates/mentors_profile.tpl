@@ -7,12 +7,12 @@
     <div class="container mt-2">
         <div class="row">
             <div class="col-sm-8">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Followed Mentor</a>
+            <ul class="nav nav-pills mb-3  py-2 px-5 someStyleinList" id="pills-tab" role="tablist" style="position: sticky;top: 64px;z-index: 1;">
+                    <li class="nav-item someStyleinListone">
+                      <a class="nav-link active someStyleinListtwo" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">New Mentor</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">New Mentor</a>
+                    <li class="nav-item someStyleinListone">
+                      <a class="nav-link someStyleinListtwo" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Followed Mentor</a>
                     </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
@@ -27,7 +27,9 @@
                                     <div class="mt-3">
                                     <a class="btn btn-sm btn-outline-primary"
                                     href="{base_url()}/mentors_detailed_profile/mentors_id={$mentordata.id}">View Profile</a>
-                                    <a class="btn btn-sm btn-outline-primary followbyMentee" href="javascript:void();" id={$userSessionDetail.id}       mentorid={$mentordata.id}>Follow Mentor</a>
+                                    <a class="btn btn-sm btn-outline-primary followbyMentee followbyMneteeDisablesdd" href="javascript:void();" 
+                                    id={$userSessionDetail.id}  mentorid={$mentordata.id}>Follow Mentor</a>
+                                    <a class="btn btn-danger d-none cancelRequestBtn">Cancel</a>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -53,7 +55,7 @@
                                             href="{base_url()}/mentors_detailed_profile/mentors_id={$followmentordata.id}">View Profile</a>
                                             
                                             <a class="btn btn-sm btn-outline-primary" href="">Message</a>
-                                            <button class="btn btn-sm btn-outline-primary followUnfollow" href="">Following <i class="far fa-check-circle"></i></button>
+                                            <button class="btn btn-sm btn-success followUnfollow" >Following <i class="far fa-check-circle"></i></button>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -70,7 +72,7 @@
                   </div>
     </div>
     <div class="col-sm-4">
-            <div class="container  border border-dark mentorListStyles" style="position: sticky;top: 112px;">
+            <div class="container" style="position: sticky;top: 112px;">
                     <div class="row">
                         <div class="col-sm-12" style="overflow-y: scroll;height: 550px;">
                             <h5 class="text-success text-center py-3">News Feed</h5>
@@ -99,5 +101,9 @@ $(document).ready(function(){
     $('.followUnfollow').mouseleave(function(){
         $(this).html('Following').append(' <i class="far fa-check-circle"></i>');
     });
+    $('.followbyMneteeDisablesdd').click(function(){
+        $(this).html().append('<span class="spinner-border spinner-border-sm"></span>');
+    });
+    
 });
 </script>

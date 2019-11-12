@@ -53,3 +53,19 @@ ul li {
 .imageUploadStyles{
   color: #245e0d;
 }
+
+.someStyleinList{
+  background: linear-gradient(100deg, black,transparent);
+}
+.someStyleinList .someStyleinListone{
+    padding: 0 !important;
+    border-radius: 1rem !important;
+
+    
+}
+.someStyleinList .someStyleinListone .someStyleinListtwo{
+  color: chartreuse !important;
+  text-decoration: underline;
+  border-radius: 1.5rem !important;
+
+}
