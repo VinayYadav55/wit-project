@@ -43,9 +43,7 @@ $(document).ready(function() {
   if(pathname === "/womenintech/mentors_profile"){
     $('.usrmentor').addClass('activateClr');
   }
-  if(pathname === "/womenintech/mentors_detailed_profile"){
-    $('.usrmentor').addClass('activateClr');
-  }
+
   if(pathname === "/womenintech/mentee_list"){
     $('.mentee').addClass('activateClr');
   }
@@ -55,8 +53,12 @@ $(document).ready(function() {
     $('.messages').addClass('activateClr');
   }
   
+
   
   pathname = pathname.split("/");
+  if(pathname[2] === "mentors_detailed_profile"){
+    $('.usrmentor').addClass('activateClr');
+  }
   if(pathname[2] === "job_details"){
     $('.usrappliedjob').addClass('activateClr');
   }

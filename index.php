@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-ini_set('display_errors', 1);
-error_reporting(1);
+//ini_set('display_errors', 1);
+//error_reporting(-1);
 require_once 'include/config.php';
 function base_url() {
 	return 'http://localhost/womenintech';

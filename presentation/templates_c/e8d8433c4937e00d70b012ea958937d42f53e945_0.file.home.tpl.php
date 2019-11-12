@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-11 07:45:13
+/* Smarty version 3.1.33, created on 2019-11-11 12:10:39
   from 'C:\xampp\htdocs\womenintech\presentation\templates\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dc90379a7a254_57214407',
+  'unifunc' => 'content_5dc941af7fee03_74845254',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e8d8433c4937e00d70b012ea958937d42f53e945' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\home.tpl',
-      1 => 1573454711,
+      1 => 1573463465,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5dc90379a7a254_57214407 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc941af7fee03_74845254 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 <!DOCTYPE html>
 <html lang="en">
@@ -1053,7 +1053,7 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
       });
       $('.openerSidebarBtn').click(function(){
       $('.closerSidebarBtn').fadeIn(3000);
-    })
+    });
       $('.menuTab').click(function () {
         $('.menuTabContent').slideToggle();
         $('.menuTabSecond').show();

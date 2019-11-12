@@ -651,6 +651,19 @@ class catalogOperations {
 		return DatabaseHandler::GetAll($sql,$params);
 	}
 
+	public static function getMentorData($mentorId){
+
+		$sql = "SELECT * FROM users WHERE id=?";
+		$params=[$mentorId];
+		return DatabaseHandler::GetRow($sql,$params);
+	}
+	public static function followMentor($followUserId, $followMentorId){
+
+		$sql = "INSERT INTO mentor_followers (mentor_id, follower_id) VALUES (?,?)";
+		$params = [$followMentorId, $followUserId];
+		return DatabaseHandler::Execute($sql,$params);
+	}
+
 	
 }
 
