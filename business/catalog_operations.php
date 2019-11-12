@@ -671,6 +671,20 @@ class catalogOperations {
 		return DatabaseHandler::Execute($sql,$params);
 	}
 
+	public static function getMentorsNewRequest($mentor_id){
+
+		$sql = "SELECT * FROM mentor_followers INNER JOIN users ON mentor_followers.follower_id=users.id WHERE mentor_followers.mentor_id = ? AND mentor_followers.request_status='0'";
+		$params = [$mentor_id];
+		return DatabaseHandler::GetAll($sql,$params);
+	}
+
+	public static function getMentorsfollowersData($mentor_id){
+
+		$sql = "SELECT * FROM mentor_followers INNER JOIN users ON mentor_followers.follower_id=users.id WHERE mentor_followers.mentor_id = ? AND mentor_followers.request_status='1'";
+		$params = [$mentor_id];
+		return DatabaseHandler::GetAll($sql,$params);
+	}
+
 	
 }
 

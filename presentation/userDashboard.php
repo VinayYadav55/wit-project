@@ -5,6 +5,9 @@ class userDashboard{
 	public $followedMentorProfiles;
 	public $userId;
 	public $appliedJobsList;
+	public $mentorFollowersRequest;
+	public $mentorFollowers;
+
 	public function __construct(){
 		$userId = $_SESSION['userDetails']['id'];
 		$allAppliedJobs = catalogOperations::getUserAppliedJobs($userId);
@@ -114,6 +117,28 @@ class userDashboard{
 			$getUnFollowedMentors = catalogOperations::getUnFollowedMentors($user_id);
 			$this->unFollowedMentorProfiles=$getUnFollowedMentors;
 
+		}
+
+		if(isset($_GET['mentee_list'])){
+			
+			if(isset($_GET['newRequest'])){
+				$mentor_id = $_SESSION['userDetails']['id'];
+				$getMentorsNewRequest = catalogOperations::getMentorsNewRequest($mentor_id);
+
+				$this->mentorFollowersRequest=$getMentorsNewRequest;
+			}elseif(isset($_GET['followers'])){
+				
+				$mentor_id = $_SESSION['userDetails']['id'];
+				$getMentorsfollowersData = catalogOperations::getMentorsfollowersData($mentor_id);
+
+				$this->mentorFollowersRequest=$getMentorsfollowersData;
+			}else{
+				$mentor_id = $_SESSION['userDetails']['id'];
+				$getMentorsNewRequest = catalogOperations::getMentorsNewRequest($mentor_id);
+				$this->mentorFollowersRequest=$getMentorsNewRequest;
+			}
+
+			
 		}
 	}
 }
