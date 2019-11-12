@@ -15,8 +15,7 @@ class mentorsProfile{
 			$followMentorId= $_POST['mentor_id'];
       $followMentorbyMentee = catalogOperations::followMentor($followUserId,$followMentorId);
       // $this->mentorData = $getMentorProfile;
-     
-				$response=array('success' =>'true' , 'message'=> 'You have followed Successful');
+				$response=array('success' =>'true' , 'message'=> 'Pending');
 				echo json_encode($response);
 				exit;
 			}

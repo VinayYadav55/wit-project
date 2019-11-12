@@ -29,7 +29,8 @@
                                     href="{base_url()}/mentors_detailed_profile/mentors_id={$mentordata.id}">View Profile</a>
                                     <a class="btn btn-sm btn-outline-primary followbyMentee followbyMneteeDisablesdd" href="javascript:void();" 
                                     id={$userSessionDetail.id}  mentorid={$mentordata.id}>Follow Mentor</a>
-                                    <a class="btn btn-danger d-none cancelRequestBtn">Cancel</a>
+                                    <button class="btn btn-danger btn-outline-danger btn-sm cancelRequest " 
+                                    id={$userSessionDetail.id}  mentorid={$mentordata.id}>Cancel</button>
                                 </div>
                             </div>
                             <div class="col-4">
@@ -54,8 +55,9 @@
                                             <a class="btn btn-sm btn-outline-primary"  
                                             href="{base_url()}/mentors_detailed_profile/mentors_id={$followmentordata.id}">View Profile</a>
                                             
-                                            <a class="btn btn-sm btn-outline-primary" href="">Message</a>
-                                            <button class="btn btn-sm btn-success followUnfollow" >Following <i class="far fa-check-circle"></i></button>
+                                            <a class="btn btn-sm btn-outline-primary" href="javascript:void();">Message</a>
+                                            <a class="btn btn-sm btn-success followUnfollow followUnfollowBtn"
+                                            id={$userSessionDetail.id}  mentorid={$followmentordata.id}  href="javascript:void();">Following <i class="far fa-check-circle"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -74,7 +76,7 @@
     <div class="col-sm-4">
             <div class="container" style="position: sticky;top: 112px;">
                     <div class="row">
-                        <div class="col-sm-12" style="overflow-y: scroll;height: 550px;">
+                        <div class="col-sm-12 border border-secondary" style="overflow-y: scroll;height: 550px;">
                             <h5 class="text-success text-center py-3">News Feed</h5>
                             <hr>
                             <h5 class="text-success text-center py-3">News Feed</h5>
@@ -96,14 +98,15 @@
 <script>
 $(document).ready(function(){
     $('.followUnfollow').mouseenter(function(){
-        $(this).html('Unfollow');
+        $(this).text('Unfollow');
+        $(this).addClass('px-3');
     });
     $('.followUnfollow').mouseleave(function(){
-        $(this).html('Following').append(' <i class="far fa-check-circle"></i>');
+        $(this).text('Following').append(' <i class="far fa-check-circle"></i>');
+        $(this).removeClass('px-3');
     });
     $('.followbyMneteeDisablesdd').click(function(){
-        $(this).html().append('<span class="spinner-border spinner-border-sm"></span>');
+        $(this).html('').append('<i class="fas fa-spinner fa-spin"></i>');
     });
-    
 });
 </script>

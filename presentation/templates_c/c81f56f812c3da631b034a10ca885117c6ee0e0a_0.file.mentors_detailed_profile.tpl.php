@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-11 15:15:26
+/* Smarty version 3.1.33, created on 2019-11-12 13:12:46
   from 'C:\xampp\htdocs\womenintech\presentation\templates\mentors_detailed_profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dc96cfe624ea9_45801389',
+  'unifunc' => 'content_5dcaa1be691b09_14347010',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c81f56f812c3da631b034a10ca885117c6ee0e0a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\mentors_detailed_profile.tpl',
-      1 => 1573475105,
+      1 => 1573560763,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:dashheader.tpl' => 1,
   ),
 ),false)) {
-function content_5dc96cfe624ea9_45801389 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcaa1be691b09_14347010 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\womenintech\\presentation\\smarty_plugins\\function.load_presentation_object.php','function'=>'smarty_function_load_presentation_object',),));
 echo smarty_function_load_presentation_object(array('filename'=>'mentorsProfile','assign'=>'obj'),$_smarty_tpl);?>
 
@@ -34,7 +34,7 @@ $_smarty_tpl->_subTemplateRender('file:dashheader.tpl', $_smarty_tpl->cache_id, 
      <div class="container p-3">
         <div class="col-sm-12">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 bgImageForCover">
                     <div class="speakerImgDiv">
                             <div class="imageContainerSpeaker">
                                 <img src="<?php echo base_url();?>

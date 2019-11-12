@@ -7,7 +7,7 @@
      <div class="container p-3">
         <div class="col-sm-12">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 bgImageForCover">
                     <div class="speakerImgDiv">
                             <div class="imageContainerSpeaker">
                                 <img src="{base_url()}/images/avtar.png" class="main-image-speaker rounded-circle" alt="" />
@@ -17,7 +17,6 @@
                  <div class="text-center">
                      <span class="btn btn-primary btn-sm border border-dark p-2 bg-dark">Followers  <span class="badge badge-primary"> 150</span></span>
                      <button class="btn btn-sm btn-primary px-5 py-2">Follow</button>
-                     <!-- <button class="btn btn-sm btn-primary px-5 py-2">Unfollow</button> -->
                 </div>
                 <hr>
             </div>
