@@ -20,6 +20,13 @@ class mentorsProfile{
 				echo json_encode($response);
 				exit;
 			}
+
+      if(isset($_GET['accept_follow_request'])){
+        $mentor_id = $_POST['mentor_id'];
+        $follwer_id = $_POST['follwer_id'];
+
+        $accept_request = catalogOperations::approveFollowerRequest($mentor_id,$follwer_id); 
+      }
   }
 }
 
