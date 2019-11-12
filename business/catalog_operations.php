@@ -639,14 +639,14 @@ class catalogOperations {
 		$sql = "SELECT * FROM mentor_followers
 				INNER JOIN users 
 				ON mentor_followers.mentor_id = users.id 
-				WHERE follower_id= ?";
+				WHERE follower_id= ? AND mentor_followers.request_status='1'";
 		$params=[$user_id];
 		return DatabaseHandler::GetAll($sql,$params);
 	}
 
 	public static function getUnFollowedMentors($user_id){
 
-		$sql = "SELECT users.* FROM users WHERE users.id NOT IN (SELECT mentor_followers.mentor_id FROM mentor_followers WHERE mentor_followers.follower_id=?) AND users.type='Mentor'";
+		$sql = "SELECT users.* FROM users WHERE users.id NOT IN (SELECT mentor_followers.mentor_id FROM mentor_followers WHERE mentor_followers.follower_id=? AND mentor_followers.request_status='1') AND users.type='Mentor'  ";
 		$params=[$user_id];
 		return DatabaseHandler::GetAll($sql,$params);
 	}
@@ -661,6 +661,13 @@ class catalogOperations {
 
 		$sql = "INSERT INTO mentor_followers (mentor_id, follower_id) VALUES (?,?)";
 		$params = [$followMentorId, $followUserId];
+		return DatabaseHandler::Execute($sql,$params);
+	}
+
+	public static function approveFollowerRequest($mentor_id,$follwer_id){
+
+		$sql = " UPDATE mentor_followers SET  request_status = '1' WHERE mentor_id = ? AND follower_id = ?";
+		$params = [$mentor_id,$follwer_id];
 		return DatabaseHandler::Execute($sql,$params);
 	}
 
