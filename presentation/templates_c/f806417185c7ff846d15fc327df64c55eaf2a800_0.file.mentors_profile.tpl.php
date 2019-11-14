@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-12 09:52:27
+/* Smarty version 3.1.33, created on 2019-11-14 11:57:41
   from 'C:\xampp\htdocs\womenintech\presentation\templates\mentors_profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dca72cb729221_85521002',
+  'unifunc' => 'content_5dcd3325e00381_08888730',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f806417185c7ff846d15fc327df64c55eaf2a800' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\mentors_profile.tpl',
-      1 => 1573548742,
+      1 => 1573728777,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:dashheader.tpl' => 1,
   ),
 ),false)) {
-function content_5dca72cb729221_85521002 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd3325e00381_08888730 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\womenintech\\presentation\\smarty_plugins\\function.load_presentation_object.php','function'=>'smarty_function_load_presentation_object',),));
 echo smarty_function_load_presentation_object(array('filename'=>'userDashboard','assign'=>'obj'),$_smarty_tpl);?>
 
@@ -66,7 +66,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['mentordata']->value) {
                                     href="<?php echo base_url();?>
 /mentors_detailed_profile/mentors_id=<?php echo $_smarty_tpl->tpl_vars['mentordata']->value['id'];?>
 ">View Profile</a>
-                                    <a class="btn btn-sm btn-outline-primary followbyMentee followbyMneteeDisablesdd" href="javascript:void();" id=<?php echo $_smarty_tpl->tpl_vars['userSessionDetail']->value['id'];?>
+                                    <a class="btn btn-sm btn-outline-primary followbyMentee followbyMneteeDisablesdd" href="javascript:void();" 
+                                    id=<?php echo $_smarty_tpl->tpl_vars['userSessionDetail']->value['id'];?>
   mentorid=<?php echo $_smarty_tpl->tpl_vars['mentordata']->value['id'];?>
 >Follow Mentor</a>
                                     <a class="btn btn-danger d-none cancelRequestBtn">Cancel</a>
@@ -109,7 +110,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['followmentordata']->value) {
 ">View Profile</a>
                                             
                                             <a class="btn btn-sm btn-outline-primary" href="">Message</a>
-                                            <button class="btn btn-sm btn-success followUnfollow" href="">Following <i class="far fa-check-circle"></i></button>
+                                            <button class="btn btn-sm btn-success followUnfollow" >Following <i class="far fa-check-circle"></i></button>
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -161,7 +162,7 @@ $(document).ready(function(){
         $(this).html('Following').append(' <i class="far fa-check-circle"></i>');
     });
     $('.followbyMneteeDisablesdd').click(function(){
-        $(this).html().append(' <span class="spinner-border spinner-border-sm"></span>');
+        $(this).html().append('<span class="spinner-border spinner-border-sm"></span>');
     });
     
 });

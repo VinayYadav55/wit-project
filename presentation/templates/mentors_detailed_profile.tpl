@@ -3,6 +3,7 @@
 {assign var='candidateDetail' value=$obj->applicantDetails}
 {assign var='mentorProfileData' value=$obj->mentorData}
 {include file='dashheader.tpl'}
+<!-- <script src="{base_url()}/js/mentors_folloes.js"></script> -->
 <div class="docs-content-wrapper">
      <div class="container p-3">
         <div class="col-sm-12">
@@ -16,7 +17,8 @@
                 <div class="text-center"> <h5>{$mentorProfileData.first_name} {$mentorProfileData.last_name}</h5></div>
                  <div class="text-center">
                      <span class="btn btn-primary btn-sm border border-dark p-2 bg-dark">Followers  <span class="badge badge-primary"> 150</span></span>
-                     <button class="btn btn-sm btn-primary px-5 py-2">Follow</button>
+                     <a class="btn btn-sm btn-outline-primary" href="javascript:void();" 
+                     id={$userSessionDetail.id}  mentorid={$mentorProfileData.id}>Follow Mentor</a>
                      <!-- <button class="btn btn-sm btn-primary px-5 py-2">Unfollow</button> -->
                 </div>
                 <hr>
