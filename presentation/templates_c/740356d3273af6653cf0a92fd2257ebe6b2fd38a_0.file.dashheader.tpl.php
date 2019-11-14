@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-14 07:48:12
+/* Smarty version 3.1.33, created on 2019-11-14 13:09:14
   from 'C:\xampp\htdocs\womenintech\presentation\templates\dashheader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dccf8ac31ae25_86223795',
+  'unifunc' => 'content_5dcd43eae77207_04780461',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '740356d3273af6653cf0a92fd2257ebe6b2fd38a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\dashheader.tpl',
-      1 => 1573714068,
+      1 => 1573733352,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dccf8ac31ae25_86223795 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd43eae77207_04780461 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 
 <!DOCTYPE html>
@@ -158,7 +158,7 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 </head>
 
 
-<body onload="startTime()">
+<body>
   <div class="loader"></div>
   <input type="hidden" baseUrl=<?php echo base_url();?>
  class="baseUrl">
@@ -331,36 +331,11 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
           });
         })
       });
-      // var time= new Date();
-      // var time= new Date($.now());
-      // var start = new Date;
-        setInterval(function() {
-          var time= new Date();
-    $('.clockDiv').html(time.toLocaleTimeString());
-    // $('.clockDiv').text((new Date - start) / 1000 + " Seconds");
-}, 1000);
+
       
     });  
   <?php echo '</script'; ?>
 >
-  <?php echo '<script'; ?>
->
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =
-      h + ":" + m + ":" + s;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    <?php echo '</script'; ?>
->
+
   <?php }
 }

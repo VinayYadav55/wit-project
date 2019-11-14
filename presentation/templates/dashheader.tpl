@@ -72,7 +72,7 @@
 </head>
 
 
-<body onload="startTime()">
+<body>
   <div class="loader"></div>
   <input type="hidden" baseUrl={base_url()} class="baseUrl">
   <input type="hidden" userId={$userSessionDetail.id} class="usedId">
@@ -229,32 +229,9 @@
           });
         })
       });
-      // var time= new Date();
-      // var time= new Date($.now());
-      // var start = new Date;
-        setInterval(function() {
-          var time= new Date();
-    $('.clockDiv').html(time.toLocaleTimeString());
-    // $('.clockDiv').text((new Date - start) / 1000 + " Seconds");
-}, 1000);
+
       
     });  
   </script>
-  <script>
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =
-      h + ":" + m + ":" + s;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    </script>
+
   {/literal}

@@ -31,7 +31,7 @@
                                     <a class="btn btn-sm btn-outline-primary"
                                     href="{base_url()}/mentors_detailed_profile/mentors_id={$mentordata.id}">View Profile</a>
                                     <a class="btn btn-sm btn-outline-primary followbyMentee followbyMneteeDisablesdd" href="javascript:void();" 
-                                    id={$userSessionDetail.id}  mentorid={$mentordata.id}>Follow Mentor</a>
+                                     id={$userSessionDetail.id}  mentorid={$mentordata.id}>Follow Mentor</a>
                                    
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                                 href="{base_url()}/mentors_detailed_profile/mentors_id={$pendingData.id}">View Profile</a>
                                                 <a class="btn btn-danger btn-outline-danger 
                                                 btn-sm cancelRequest" href="javascript:void();"
-                                                id={$userSessionDetail.id}  mentorid={$pendingData.id}>Cancel Request</a>
+                                                 id={$userSessionDetail.id}   mentorid={$pendingData.id}>Cancel Request</a>
                                             </div>
                                         </div>
                                         <div class="col-4">
