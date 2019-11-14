@@ -26,7 +26,7 @@
             <div class="col-6 border border-top-0 border-bottom-0 border-left-0 border-dark"><div><b>Gender:</b> {$mentorProfileData.gender}</div>
             <div><b>Email id:</b> {$mentorProfileData.email_id}</div></div>
             <div class="col-6">
-                <h6>About Mentors</h6>
+                <h6>About Mentors Data</h6>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, minima odit provident nemo, ullam iste corporis fugiat necessitatibus harum accusantium recusandae sequi facere, optio laborum deleniti excepturi itaque quos reiciendis?</p>
             </div>
                     
