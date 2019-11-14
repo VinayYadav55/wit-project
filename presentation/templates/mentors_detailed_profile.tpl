@@ -35,7 +35,6 @@
     </div>
 </div>  
 {else}
-{$menteeProfileData|@var_dump}
 <div class="docs-content-wrapper">
         <div class="container p-3">
            <div class="col-sm-12">
