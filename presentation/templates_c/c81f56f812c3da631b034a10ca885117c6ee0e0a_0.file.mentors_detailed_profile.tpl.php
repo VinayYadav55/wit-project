@@ -1,18 +1,36 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.33, created on 2019-11-14 10:44:06
+||||||| 33ac817
+/* Smarty version 3.1.33, created on 2019-11-11 15:15:26
+=======
+/* Smarty version 3.1.33, created on 2019-11-14 11:53:18
+>>>>>>> origin/sanjeev
   from 'C:\xampp\htdocs\womenintech\presentation\templates\mentors_detailed_profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
+<<<<<<< HEAD
   'unifunc' => 'content_5dcd21e6ef0bb5_60572738',
+||||||| 33ac817
+  'unifunc' => 'content_5dc96cfe624ea9_45801389',
+=======
+  'unifunc' => 'content_5dcd321e9e3df6_57201905',
+>>>>>>> origin/sanjeev
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c81f56f812c3da631b034a10ca885117c6ee0e0a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\mentors_detailed_profile.tpl',
+<<<<<<< HEAD
       1 => 1573718363,
+||||||| 33ac817
+      1 => 1573475105,
+=======
+      1 => 1573728796,
+>>>>>>> origin/sanjeev
       2 => 'file',
     ),
   ),
@@ -21,7 +39,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:dashheader.tpl' => 1,
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5dcd21e6ef0bb5_60572738 (Smarty_Internal_Template $_smarty_tpl) {
+||||||| 33ac817
+function content_5dc96cfe624ea9_45801389 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5dcd321e9e3df6_57201905 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> origin/sanjeev
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\womenintech\\presentation\\smarty_plugins\\function.load_presentation_object.php','function'=>'smarty_function_load_presentation_object',),));
 echo smarty_function_load_presentation_object(array('filename'=>'mentorsProfile','assign'=>'obj'),$_smarty_tpl);?>
 
@@ -31,8 +55,16 @@ $_smarty_tpl->_assignInScope('mentorProfileData', $_smarty_tpl->tpl_vars['obj']-
 $_smarty_tpl->_assignInScope('menteeProfileData', $_smarty_tpl->tpl_vars['obj']->value->followerData);
 $_smarty_tpl->_subTemplateRender('file:dashheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+<<<<<<< HEAD
 
 <?php if ($_smarty_tpl->tpl_vars['mentorProfileData']->value['type'] == 'Mentor') {?>
+||||||| 33ac817
+=======
+<!-- <?php echo '<script'; ?>
+ src="<?php echo base_url();?>
+/js/mentors_folloes.js"><?php echo '</script'; ?>
+> -->
+>>>>>>> origin/sanjeev
 <div class="docs-content-wrapper">
      <div class="container p-3">
         <div class="col-sm-12">
@@ -49,7 +81,18 @@ $_smarty_tpl->_subTemplateRender('file:dashheader.tpl', $_smarty_tpl->cache_id, 
 </h5></div>
                  <div class="text-center">
                      <span class="btn btn-primary btn-sm border border-dark p-2 bg-dark">Followers  <span class="badge badge-primary"> 150</span></span>
+<<<<<<< HEAD
                      <button class="btn btn-sm btn-primary px-5 py-2">Follow</button>
+||||||| 33ac817
+                     <button class="btn btn-sm btn-primary px-5 py-2">Follow</button>
+                     <!-- <button class="btn btn-sm btn-primary px-5 py-2">Unfollow</button> -->
+=======
+                     <a class="btn btn-sm btn-outline-primary" href="javascript:void();" 
+                     id=<?php echo $_smarty_tpl->tpl_vars['userSessionDetail']->value['id'];?>
+  mentorid=<?php echo $_smarty_tpl->tpl_vars['mentorProfileData']->value['id'];?>
+>Follow Mentor</a>
+                     <!-- <button class="btn btn-sm btn-primary px-5 py-2">Unfollow</button> -->
+>>>>>>> origin/sanjeev
                 </div>
                 <hr>
             </div>

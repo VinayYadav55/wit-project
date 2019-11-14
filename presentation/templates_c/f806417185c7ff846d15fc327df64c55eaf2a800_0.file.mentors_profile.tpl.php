@@ -1,18 +1,36 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.33, created on 2019-11-14 10:43:27
+||||||| 33ac817
+/* Smarty version 3.1.33, created on 2019-11-12 09:52:27
+=======
+/* Smarty version 3.1.33, created on 2019-11-14 11:57:41
+>>>>>>> origin/sanjeev
   from 'C:\xampp\htdocs\womenintech\presentation\templates\mentors_profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
+<<<<<<< HEAD
   'unifunc' => 'content_5dcd21bfa44404_43587449',
+||||||| 33ac817
+  'unifunc' => 'content_5dca72cb729221_85521002',
+=======
+  'unifunc' => 'content_5dcd3325e00381_08888730',
+>>>>>>> origin/sanjeev
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f806417185c7ff846d15fc327df64c55eaf2a800' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\mentors_profile.tpl',
+<<<<<<< HEAD
       1 => 1573714147,
+||||||| 33ac817
+      1 => 1573548742,
+=======
+      1 => 1573728777,
+>>>>>>> origin/sanjeev
       2 => 'file',
     ),
   ),
@@ -21,7 +39,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:dashheader.tpl' => 1,
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5dcd21bfa44404_43587449 (Smarty_Internal_Template $_smarty_tpl) {
+||||||| 33ac817
+function content_5dca72cb729221_85521002 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5dcd3325e00381_08888730 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> origin/sanjeev
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\womenintech\\presentation\\smarty_plugins\\function.load_presentation_object.php','function'=>'smarty_function_load_presentation_object',),));
 echo smarty_function_load_presentation_object(array('filename'=>'userDashboard','assign'=>'obj'),$_smarty_tpl);?>
 
@@ -112,11 +136,19 @@ foreach ($_from as $_smarty_tpl->tpl_vars['followmentordata']->value) {
 /mentors_detailed_profile/mentors_id=<?php echo $_smarty_tpl->tpl_vars['followmentordata']->value['id'];?>
 ">View Profile</a>
                                             
+<<<<<<< HEAD
                                             <a class="btn btn-sm btn-outline-primary" href="javascript:void();">Message</a>
                                             <a class="btn btn-sm btn-success followUnfollow followUnfollowBtn"
                                             id=<?php echo $_smarty_tpl->tpl_vars['userSessionDetail']->value['id'];?>
   mentorid=<?php echo $_smarty_tpl->tpl_vars['followmentordata']->value['id'];?>
   href="javascript:void();">Following <i class="far fa-check-circle"></i></a>
+||||||| 33ac817
+                                            <a class="btn btn-sm btn-outline-primary" href="">Message</a>
+                                            <button class="btn btn-sm btn-success followUnfollow" href="">Following <i class="far fa-check-circle"></i></button>
+=======
+                                            <a class="btn btn-sm btn-outline-primary" href="">Message</a>
+                                            <button class="btn btn-sm btn-success followUnfollow" >Following <i class="far fa-check-circle"></i></button>
+>>>>>>> origin/sanjeev
                                         </div>
                                     </div>
                                     <div class="col-4">
@@ -214,8 +246,20 @@ $(document).ready(function(){
         $(this).addClass('px-3');
     });
     $('.followUnfollow').mouseleave(function(){
+<<<<<<< HEAD
         $(this).text('Following').append(' <i class="far fa-check-circle"></i>');
         $(this).removeClass('px-3');
+||||||| 33ac817
+        $(this).html('Following').append(' <i class="far fa-check-circle"></i>');
+    });
+    $('.followbyMneteeDisablesdd').click(function(){
+        $(this).html().append(' <span class="spinner-border spinner-border-sm"></span>');
+=======
+        $(this).html('Following').append(' <i class="far fa-check-circle"></i>');
+    });
+    $('.followbyMneteeDisablesdd').click(function(){
+        $(this).html().append('<span class="spinner-border spinner-border-sm"></span>');
+>>>>>>> origin/sanjeev
     });
     // $('.followbyMneteeDisablesdd').click(function(){
         // var thisDiv = $(this);
