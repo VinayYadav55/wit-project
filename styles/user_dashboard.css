@@ -69,3 +69,11 @@ ul li {
   border-radius: 1.5rem !important;
 
 }
+.bgImageForCover{
+  background-image:url('../images/wit_website_images/background_image_three.jpg'); 
+  background-size: cover;
+   background-position: center;
+   max-width: 100%;
+   height: auto;
+
+}

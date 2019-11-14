@@ -5,6 +5,10 @@ class userDashboard{
 	public $followedMentorProfiles;
 	public $userId;
 	public $appliedJobsList;
+	public $mentorFollowersRequest;
+	public $mentorFollowers;
+	public $sentRequestData;
+
 	public function __construct(){
 		$userId = $_SESSION['userDetails']['id'];
 		$allAppliedJobs = catalogOperations::getUserAppliedJobs($userId);
@@ -108,12 +112,70 @@ class userDashboard{
 	                        exit();
 		}
 		if(isset($_GET['mentors_profile'])){
-			$user_id = $_SESSION['userDetails']['id'];
-			$getFollowedMentors = catalogOperations::getFollowedMentorsList($user_id);
-			$this->followedMentorProfiles=$getFollowedMentors;
-			$getUnFollowedMentors = catalogOperations::getUnFollowedMentors($user_id);
-			$this->unFollowedMentorProfiles=$getUnFollowedMentors;
+			if(isset($_POST['cancelFollowRequest'])||isset($_POST['unfollowMentor'])){
+				
+				$mentor_id = $_POST['mentor_id'];
+				$user_id = $_POST['user_id'];
+				$cancelRequest = catalogOperations::cancelFollowRequest($mentor_id,$user_id);
+				
+				if($cancelRequest){
+					$response = array('success'=>'true','message'=>'Request Cancelled');
+					echo json_encode($response);
+					exit;
+				}else{
+					$response = array('success'=>'fail','message'=>'Error Occured');
+					echo json_encode($response);
+					exit;
+				}
+	
+			}else{
+				$user_id = $_SESSION['userDetails']['id'];
+				$getFollowedMentors = catalogOperations::getFollowedMentorsList($user_id);
+				$this->followedMentorProfiles=$getFollowedMentors;
+				$getUnFollowedMentors = catalogOperations::getUnFollowedMentors($user_id);
+				$this->unFollowedMentorProfiles=$getUnFollowedMentors;
+				$getSentRequest = catalogOperations::getSentRequest($user_id);
+				$this->sentRequestData = $getSentRequest;
+			}
+			
 
+		}
+	
+
+		if(isset($_GET['mentee_list'])){
+			
+			if(isset($_GET['newRequest'])){
+				$mentor_id = $_SESSION['userDetails']['id'];
+				$getMentorsNewRequest = catalogOperations::getMentorsNewRequest($mentor_id);
+
+				$this->mentorFollowersRequest=$getMentorsNewRequest;
+			}elseif(isset($_GET['followers'])){
+				
+				$mentor_id = $_SESSION['userDetails']['id'];
+				$getMentorsfollowersData = catalogOperations::getMentorsfollowersData($mentor_id);
+
+				$this->mentorFollowersRequest=$getMentorsfollowersData;
+       
+			}elseif(isset($_POST['acceptRequest'])){
+				$mentor_id = $_POST['mentor_id'];
+				$follower_id = $_POST['requestid'];
+				$return = catalogOperations::approveFollowerRequest($mentor_id,$follower_id);
+				if($return){
+					$response = array('success'=>'true', 'message'=>'Request accepted');
+					echo json_encode($response);
+					exit;
+				}else{
+					$response = array('success'=>'fail', 'message'=>'error');
+					echo json_encode($response);
+					exit;
+				}
+			}else{
+			$mentor_id = $_SESSION['userDetails']['id'];
+			$getMentorsNewRequest = catalogOperations::getMentorsNewRequest($mentor_id);
+			$this->mentorFollowersRequest=$getMentorsNewRequest;
+			}
+
+			
 		}
 	}
 }

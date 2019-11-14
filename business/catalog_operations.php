@@ -9,7 +9,13 @@ class catalogOperations {
 	}
 
 	public static function getAllMentorsList(){
-		$sql = "SELECT * FROM users WHERE type='Mentor'";
+		$sql = "SELECT * FROM users WHERE type='Mentor' AND mentor_approved='0'";
+
+		return DatabaseHandler::GetAll($sql);
+	}
+
+	public static function getAllApprovedMentorsList(){
+		$sql = "SELECT * FROM users WHERE type='Mentor' AND mentor_approved='1'";
 
 		return DatabaseHandler::GetAll($sql);
 	}
@@ -382,7 +388,7 @@ class catalogOperations {
 	}
 
 	public static function getCandidateFullDetail($applicant_id){
-		$sql = "SELECT job_portal_applicant_details.*,users.first_name,users.last_name
+		$sql = "SELECT job_portal_applicant_details.*,users.*
 				FROM job_portal_applicant_details
 				INNER JOIN users 
 				ON job_portal_applicant_details.applicant_id=users.id WHERE applicant_id=?";
@@ -639,14 +645,14 @@ class catalogOperations {
 		$sql = "SELECT * FROM mentor_followers
 				INNER JOIN users 
 				ON mentor_followers.mentor_id = users.id 
-				WHERE follower_id= ?";
+				WHERE follower_id= ? AND mentor_followers.request_status='1'";
 		$params=[$user_id];
 		return DatabaseHandler::GetAll($sql,$params);
 	}
 
 	public static function getUnFollowedMentors($user_id){
 
-		$sql = "SELECT users.* FROM users WHERE users.id NOT IN (SELECT mentor_followers.mentor_id FROM mentor_followers WHERE mentor_followers.follower_id=?) AND users.type='Mentor'";
+		$sql = "SELECT users.* FROM users WHERE users.id NOT IN (SELECT mentor_followers.mentor_id FROM mentor_followers WHERE mentor_followers.follower_id=? AND mentor_followers.request_status='0') AND users.type='Mentor' AND users.mentor_approved='1'";
 		$params=[$user_id];
 		return DatabaseHandler::GetAll($sql,$params);
 	}
@@ -657,11 +663,46 @@ class catalogOperations {
 		$params=[$mentorId];
 		return DatabaseHandler::GetRow($sql,$params);
 	}
+	
 	public static function followMentor($followUserId, $followMentorId){
 
 		$sql = "INSERT INTO mentor_followers (mentor_id, follower_id) VALUES (?,?)";
 		$params = [$followMentorId, $followUserId];
 		return DatabaseHandler::Execute($sql,$params);
+	}
+
+	public static function approveFollowerRequest($mentor_id,$follower_id){
+
+		$sql = " UPDATE mentor_followers SET  request_status = '1' WHERE mentor_id = ? AND follower_id = ?";
+		$params = [$mentor_id,$follower_id];
+		return DatabaseHandler::Execute($sql,$params);
+	}
+
+	public static function getMentorsNewRequest($mentor_id){
+
+		$sql = "SELECT * FROM mentor_followers INNER JOIN users ON mentor_followers.follower_id=users.id WHERE mentor_followers.mentor_id = ? AND mentor_followers.request_status='0'";
+		$params = [$mentor_id];
+		return DatabaseHandler::GetAll($sql,$params);
+	}
+
+	public static function getMentorsfollowersData($mentor_id){
+
+		$sql = "SELECT * FROM mentor_followers INNER JOIN users ON mentor_followers.follower_id=users.id WHERE mentor_followers.mentor_id = ? AND mentor_followers.request_status='1'";
+		$params = [$mentor_id];
+		return DatabaseHandler::GetAll($sql,$params);
+	}
+
+	public static function getSentRequest($follower_id){
+
+		$sql = "SELECT mentor_followers.*,users.* FROM mentor_followers INNER JOIN users ON mentor_followers.mentor_id=users.id WHERE mentor_followers.follower_id = $follower_id AND mentor_followers.request_status='0'";
+	
+		return DatabaseHandler::GetAll($sql);
+	}
+
+	public static function cancelFollowRequest($mentor_id,$follower_id){
+		$sql = "DELETE FROM mentor_followers WHERE mentor_id=$mentor_id AND follower_id=$follower_id";
+
+		return DatabaseHandler::Execute($sql);
 	}
 
 	

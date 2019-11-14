@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-12 07:46:08
+/* Smarty version 3.1.33, created on 2019-11-14 07:48:12
   from 'C:\xampp\htdocs\womenintech\presentation\templates\dashheader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dca5530deff54_93278018',
+  'unifunc' => 'content_5dccf8ac31ae25_86223795',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '740356d3273af6653cf0a92fd2257ebe6b2fd38a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\dashheader.tpl',
-      1 => 1573540783,
+      1 => 1573714068,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dca5530deff54_93278018 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dccf8ac31ae25_86223795 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 
 <!DOCTYPE html>
@@ -184,14 +184,9 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
         </li><?php }?>
         <li>.</li>
         <li>
-          <div class="nav-link waves-effect waves-light"><span class=" clockDiv"></span></div>
         </li>
-        <li><div id="txt" class="nav-link waves-effect waves-light"></div></li>
         <li>
           <div class="nav-link waves-effect waves-light dropDwonForLog logOutBtn">Logout</div>
-          <div class="mainmaincontent" style="z-index: 100;">
-            dffgdf
-          </div>
         </li>
       </ul>
     </div>
