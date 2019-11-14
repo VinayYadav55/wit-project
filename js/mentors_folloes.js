@@ -125,10 +125,5 @@ $(document).ready(function(){
       }
     });
   });
-
   
-  
- 
-  
-  
-})
+});

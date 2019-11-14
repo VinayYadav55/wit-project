@@ -51,20 +51,6 @@
   <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
   <script src="{base_url()}/js/user_dashboard.js?v={jsversion()}"></script>
   <script src="{base_url()}/js/smoothscroll.js?v={jsversion()}"></script>
-
-  <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
-  <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"></script>
-  <script
-    src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"></script>
-
-
-  <script
-    src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js"></script>
 
@@ -72,7 +58,7 @@
 </head>
 
 
-<body onload="startTime()">
+<body>
   <div class="loader"></div>
   <input type="hidden" baseUrl={base_url()} class="baseUrl">
   <input type="hidden" userId={$userSessionDetail.id} class="usedId">
@@ -124,8 +110,6 @@
         <a class="nav-link usrmentor navnav" href="{base_url()}/mentors_profile">Mentors</a>{/if}
         {if $userSessionDetail.type === 'Mentor'}
         <a class="nav-link mentee navnav" href="{base_url()}/mentee_list">Mentee List</a>{/if}
-        {if $userSessionDetail.type === 'Mentor'} <a class="nav-link messages navnav"
-          href="{base_url()}/messages">Messages</a>{/if}
       </nav>
     </div>
   </div>
@@ -229,32 +213,7 @@
           });
         })
       });
-      // var time= new Date();
-      // var time= new Date($.now());
-      // var start = new Date;
-        setInterval(function() {
-          var time= new Date();
-    $('.clockDiv').html(time.toLocaleTimeString());
-    // $('.clockDiv').text((new Date - start) / 1000 + " Seconds");
-}, 1000);
-      
-    });  
+    });
   </script>
-  <script>
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =
-      h + ":" + m + ":" + s;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    </script>
+
   {/literal}

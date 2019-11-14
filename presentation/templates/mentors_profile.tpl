@@ -16,7 +16,7 @@
                     </li>
                     <li class="nav-item someStyleinListone pendingRequestAjax">
                             <a class="nav-link someStyleinListtwo penmen" id="pills-pending-tab" data-toggle="pill" href="#pills-pending" role="tab" aria-controls="pills-pending" aria-selected="false">Pending Request</a>
-                          </li>
+                    </li>
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">    <h6 class="text-success text-center" id="newmentor" >New Mentors, You may follow</h6>

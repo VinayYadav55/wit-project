@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-14 07:48:12
+/* Smarty version 3.1.33, created on 2019-11-14 12:33:15
   from 'C:\xampp\htdocs\womenintech\presentation\templates\dashheader.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dccf8ac31ae25_86223795',
+  'unifunc' => 'content_5dcd3b7b98c666_52737235',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '740356d3273af6653cf0a92fd2257ebe6b2fd38a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\dashheader.tpl',
-      1 => 1573714068,
+      1 => 1573731190,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dccf8ac31ae25_86223795 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd3b7b98c666_52737235 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 
 <!DOCTYPE html>
@@ -113,38 +113,6 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 /js/smoothscroll.js?v=<?php echo jsversion();?>
 "><?php echo '</script'; ?>
 >
-
-  <?php echo '<script'; ?>
- src="https://unpkg.com/jquery-filepond/filepond.jquery.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
- src="https://unpkg.com/filepond/dist/filepond.min.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
- src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
-
-    src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
- src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
- src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
- src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"><?php echo '</script'; ?>
->
-
-
-  <?php echo '<script'; ?>
-
-    src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"><?php echo '</script'; ?>
->
-  <?php echo '<script'; ?>
- src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"><?php echo '</script'; ?>
->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.css" />
   <?php echo '<script'; ?>
  src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.4/croppie.min.js"><?php echo '</script'; ?>
@@ -158,7 +126,7 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
 </head>
 
 
-<body onload="startTime()">
+<body>
   <div class="loader"></div>
   <input type="hidden" baseUrl=<?php echo base_url();?>
  class="baseUrl">
@@ -224,9 +192,6 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
         <?php if ($_smarty_tpl->tpl_vars['userSessionDetail']->value['type'] === 'Mentor') {?>
         <a class="nav-link mentee navnav" href="<?php echo base_url();?>
 /mentee_list">Mentee List</a><?php }?>
-        <?php if ($_smarty_tpl->tpl_vars['userSessionDetail']->value['type'] === 'Mentor') {?> <a class="nav-link messages navnav"
-          href="<?php echo base_url();?>
-/messages">Messages</a><?php }?>
       </nav>
     </div>
   </div>
@@ -331,36 +296,9 @@ $_smarty_tpl->_assignInScope('userSessionDetail', $_SESSION['userDetails']);?>
           });
         })
       });
-      // var time= new Date();
-      // var time= new Date($.now());
-      // var start = new Date;
-        setInterval(function() {
-          var time= new Date();
-    $('.clockDiv').html(time.toLocaleTimeString());
-    // $('.clockDiv').text((new Date - start) / 1000 + " Seconds");
-}, 1000);
-      
-    });  
+    });
   <?php echo '</script'; ?>
 >
-  <?php echo '<script'; ?>
->
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =
-      h + ":" + m + ":" + s;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    <?php echo '</script'; ?>
->
+
   <?php }
 }
