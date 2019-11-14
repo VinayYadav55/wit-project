@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-06 13:11:09
+/* Smarty version 3.1.33, created on 2019-11-14 10:46:10
   from 'C:\xampp\htdocs\womenintech\presentation\templates\addedMentor.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dc2b85d786fd1_58773947',
+  'unifunc' => 'content_5dcd2262075e51_18002084',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5979d3c20539cbc4db78566464c70a5eb39606fa' => 
     array (
       0 => 'C:\\xampp\\htdocs\\womenintech\\presentation\\templates\\addedMentor.tpl',
-      1 => 1573042263,
+      1 => 1573724527,
       2 => 'file',
     ),
   ),
@@ -20,18 +20,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc2b85d786fd1_58773947 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd2262075e51_18002084 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\womenintech\\presentation\\smarty_plugins\\function.load_presentation_object.php','function'=>'smarty_function_load_presentation_object',),));
-echo smarty_function_load_presentation_object(array('filename'=>'mentors','assign'=>'obj'),$_smarty_tpl);?>
+echo smarty_function_load_presentation_object(array('filename'=>'mentorsProfile','assign'=>'obj'),$_smarty_tpl);?>
 
-<?php echo var_dump($_smarty_tpl->tpl_vars['obj']->value);?>
+<?php echo smarty_function_load_presentation_object(array('filename'=>'mentors','assign'=>'obj'),$_smarty_tpl);?>
+
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="shortcut icon" href="<?php echo base_url();?>
@@ -45,6 +45,7 @@ echo smarty_function_load_presentation_object(array('filename'=>'mentors','assig
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.0/css/buttons.dataTables.min.css" />
   <link href="<?php echo base_url();?>
@@ -77,8 +78,8 @@ echo smarty_function_load_presentation_object(array('filename'=>'mentors','assig
       <i class="fas fa-bars" style="color:#E94161; font-size:25px;"></i>
     </a>
     <a class="logo bg-white" href=<?php echo base_url();?>
-><img src="images/witlogo-dashboard-logo.jpeg" width="100" height="60" tyle="max-width:100%; height:auto;
-                alt="wit-logo" /></a>
+><img src="<?php echo base_url();?>
+/images/witlogo-dashboard-logo.jpeg" width="100" height="60"  /></a>
     <button class="navbar-toggler navbar-icon waves-effect waves-light" type="button" data-toggle="collapse"
       data-target="#navbarNav"><i class="fas fa-bars" style="color:#E94161; font-size:25px;"></i></button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -100,45 +101,135 @@ echo smarty_function_load_presentation_object(array('filename'=>'mentors','assig
   </div>
 
   <div class="docs-content-wrapper">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-12">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-12">
-
-                <button class="primary py-1">Pending Mentors</button>
-                <button class="primary py-1">Approved Mentors</button>
-                <div class="alertmessage" style="display:none;position:fixed;z-index:2;top:50%;left:50%;color: white;background-color: green"></div>
-                <div class="table-responsive-md">
-                  <div class="mentorsList">
-                    <?php
+        <div class="col-sm-12 p-2">
+                  <ul class="nav nav-pills mb-3 py-2 px-5 someStyleinList" id="pills-tab" role="tablist" style="position: sticky;top: 64px;z-index: 1;">
+                      <li class="nav-item someStyleinListone">
+                        <a class="nav-link active someStyleinListtwo" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">New Mentors</a>
+                      </li>
+                      <li class="nav-item someStyleinListone">
+                        <a class="nav-link someStyleinListtwo" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Approved List</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                          <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['obj']->value->mentors, 'list');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['list']->value) {
 ?>
-                      <div class="col-sm-12 col-md-12" style="background-color: #66caba;padding: 10px; margin-top: 10px;color: white;">
-                        <div class="mentorName"><?php echo $_smarty_tpl->tpl_vars['list']->value['first_name'];?>
+                          <div class="col-sm-12 mb-4 mentorListStyles py-4 " id="followedMentors">
+                              <div class="row">
+                                  <div class="col-8">
+                                          <h6 class="text-capitalize"><?php echo $_smarty_tpl->tpl_vars['list']->value['first_name'];?>
  <?php echo $_smarty_tpl->tpl_vars['list']->value['last_name'];?>
-</div>
-                        <button class=" btn-danger approveButton" id="<?php echo $_smarty_tpl->tpl_vars['list']->value['id'];?>
+</h6>
+                                          <div><small><b>Gender:</b> <?php echo $_smarty_tpl->tpl_vars['list']->value['gender'];?>
+</small></div>
+                                          <div><small><b>Email id:</b> <?php echo $_smarty_tpl->tpl_vars['list']->value['email_id'];?>
+</small></div>
+                                          <div class="mt-3">
+                                              <a class="btn btn-sm btn-outline-primary" 
+                                              href="<?php echo base_url();?>
+/wit_mentors_detailed_profile/mentors_id=<?php echo $_smarty_tpl->tpl_vars['list']->value['id'];?>
+">
+                                                  View Profile
+                                              </a>
+                                              <button class=" btn btn-sm btn-outline-primary approveByWit" 
+                                              id="<?php echo $_smarty_tpl->tpl_vars['list']->value['id'];?>
 ">Approve</button>
-                        <button class=" btn-danger denyButton">Deny</button>
-
-                      </div>
-                      <?php
+                                              <!-- <button class=" btn-danger denyButton">Deny</button> -->
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                          <div class="speakerImgDivMentor">
+                                                  <div class="imageContainerSpeakerMentor">
+                                                      <img src="<?php echo base_url();?>
+/images/avtar.png" class="main-image-speaker-mentor rounded-circle" alt="" />
+                                           </div>
+                                       </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                  </div>
-              </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                          <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['obj']->value->approvedMentorList, 'approvedlist');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['approvedlist']->value) {
+?>
+                          <div class="col-sm-12 mb-4 mentorListStyles py-4 " id="followedMentors">
+                              <div class="row">
+                                  <div class="col-8">
+                                          <h6 class="text-capitalize"><?php echo $_smarty_tpl->tpl_vars['approvedlist']->value['first_name'];?>
+ <?php echo $_smarty_tpl->tpl_vars['approvedlist']->value['last_name'];?>
+</h6>
+                                          <div><small><b>Gender:</b> <?php echo $_smarty_tpl->tpl_vars['approvedlist']->value['gender'];?>
+</small></div>
+                                          <div><small><b>Email id:</b> <?php echo $_smarty_tpl->tpl_vars['approvedlist']->value['email_id'];?>
+</small></div>
+                                          <div class="mt-3">
+                                              <a class="btn btn-sm btn-outline-primary" 
+                                              href="<?php echo base_url();?>
+/wit_mentors_detailed_profile/mentors_id=<?php echo $_smarty_tpl->tpl_vars['approvedlist']->value['id'];?>
+">
+                                                  View Profile
+                                              </a>
+                                      </div>
+                                  </div>
+                                  <div class="col-4">
+                                          <div class="speakerImgDivMentor">
+                                                  <div class="imageContainerSpeakerMentor">
+                                                      <img src="<?php echo base_url();?>
+/images/avtar.png" class="main-image-speaker-mentor rounded-circle" alt="" />
+                                           </div>
+                                       </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                      </div>
+                    </div> 
             </div>
           </div>
         </div>
+    
+ <!-- The Modal -->
+ <div class="modal fade animated bounceInUp" id="myModal">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header bg-dark">
+          <h4 class="modal-title text-white">Mentor Profile</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            
+          </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
       </div>
     </div>
   </div>
 
+    
+        <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"><?php echo '</script'; ?>
+>
  
   <?php echo '<script'; ?>
  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

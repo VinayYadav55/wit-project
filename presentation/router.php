@@ -153,6 +153,10 @@ class router {
                 $this->contentFile = 'wit_view_job_applicants_list.tpl';
             }elseif ($_GET['mentors']){
                 $this->contentFile = 'addedMentor.tpl';
+            }elseif ($_GET['mentors_detailed_profile']){
+                $this->contentFile= 'mentors_detailed_profile.tpl';
+            }elseif ($_GET['wit_mentors_detailed_profile']){
+                $this->contentFile= 'wit_mentors_detailed_profile.tpl';
             }
         }
 

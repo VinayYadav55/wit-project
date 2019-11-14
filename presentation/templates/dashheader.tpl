@@ -93,14 +93,9 @@
         </li>{/if}
         <li>.</li>
         <li>
-          <div class="nav-link waves-effect waves-light"><span class=" clockDiv"></span></div>
         </li>
-        <li><div id="txt" class="nav-link waves-effect waves-light"></div></li>
         <li>
           <div class="nav-link waves-effect waves-light dropDwonForLog logOutBtn">Logout</div>
-          <div class="mainmaincontent" style="z-index: 100;">
-            dffgdf
-          </div>
         </li>
       </ul>
     </div>
